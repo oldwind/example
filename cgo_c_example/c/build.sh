@@ -1,0 +1,1 @@
+CC test.c -I../go  ../go/test.a   -lpthread  -o  test
