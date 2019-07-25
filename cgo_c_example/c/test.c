@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 #include "../go/test.h"
 
 
@@ -9,4 +11,5 @@ int main() {
     struct SayWhat_return result = SayWhat(p0);
 
     printf("\nresult %s, %d\n", result.r0, result.r1);
+    free(result.r0);
 }
